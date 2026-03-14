@@ -68,18 +68,18 @@ body {
   text-align: right;
   font-weight: bold;
   color: #333;
-  margin-bottom: 5px;
-  font-size: 13px;
+  margin-bottom: 3px;
+  font-size: 11px;
 }
 
 .message {
   flex-grow: 1;
-  line-height: 1.1;
+  line-height: 1.05;
   color: #333;
-  font-size: 11px;
+  font-size: 9px;
   text-align: left;
   overflow: hidden;
-  max-height: calc(100% - 80px);
+  max-height: calc(100% - 70px);
 }
 
 .message p {
@@ -92,15 +92,15 @@ body {
   text-align: right;
   font-weight: bold;
   color: #333;
-  margin-top: 5px;
-  margin-bottom: 2px;
-  font-size: 12px;
+  margin-top: 3px;
+  margin-bottom: 1px;
+  font-size: 10px;
 }
 
 .gift-box {
   text-align: center;
-  font-size: 20px;
-  margin-top: 2px;
+  font-size: 16px;
+  margin-top: 1px;
 }
 .outside {
   -webkit-transform-style: preserve-3d;
@@ -199,10 +199,10 @@ body {
 /* 모바일 반응형 스타일 */
 @media (max-width: 768px) {
   .card {
-    width: 95vw;
-    height: 55vh;
-    min-height: 300px;
-    max-height: 350px;
+    width: 90vw;
+    height: 50vh;
+    min-height: 280px;
+    max-height: 320px;
   }
   
   .outside p {
@@ -238,38 +238,38 @@ body {
   }
   
   .message-content {
-    padding: 4px;
+    padding: 2px;
   }
   
   .recipient {
-    font-size: 13px;
-    margin-bottom: 8px;
-  }
-  
-  .message {
     font-size: 10px;
-    line-height: 1.1;
-  }
-  
-  .sender {
-    font-size: 11px;
-    margin-top: 6px;
     margin-bottom: 4px;
   }
   
+  .message {
+    font-size: 7px;
+    line-height: 1.0;
+  }
+  
+  .sender {
+    font-size: 8px;
+    margin-top: 3px;
+    margin-bottom: 2px;
+  }
+  
   .gift-box {
-    font-size: 20px;
-    margin-top: 4px;
+    font-size: 14px;
+    margin-top: 2px;
   }
 }
 
 /* 아이폰 SE 등 작은 화면용 */
 @media (max-width: 375px) {
   .card {
-    width: 95vw;
-    height: 50vh;
-    min-height: 280px;
-    max-height: 320px;
+    width: 88vw;
+    height: 45vh;
+    min-height: 260px;
+    max-height: 300px;
   }
   
   .outside p {
@@ -279,16 +279,16 @@ body {
   }
   
   .message {
-    font-size: 9px;
-    line-height: 1.05;
+    font-size: 6px;
+    line-height: 0.95;
   }
   
   .recipient, .sender {
-    font-size: 10px;
+    font-size: 8px;
   }
   
   .gift-box {
-    font-size: 18px;
+    font-size: 12px;
   }
   
   .top-layer,
