@@ -25,10 +25,14 @@ body {
   perspective: 1200px;
   transition: 1s;
 }
-.card:hover, .card:active, .card.touched {
+.card:hover,
+.card:active,
+.card.touched {
   transform: rotate(-5deg);
 }
-.card:hover .outside, .card:active .outside, .card.touched .outside {
+.card:hover .outside,
+.card:active .outside,
+.card.touched .outside {
   transform: rotateY(-130deg);
 }
 .outside,
@@ -202,18 +206,18 @@ body {
     min-height: 320px;
     max-height: 400px;
   }
-  
+
   .outside p {
     font-size: 16px;
     letter-spacing: 2px;
     margin-top: 20px;
     line-height: 1.2;
   }
-  
+
   .cake {
     bottom: 20px;
   }
-  
+
   .top-layer,
   .middle-layer,
   .bottom-layer {
@@ -222,39 +226,39 @@ body {
     background-size: 45px 75px;
     background-position: 21px 0;
   }
-  
+
   .candle {
     height: 35px;
     width: 12px;
     bottom: 152px;
   }
-  
+
   .candle:before {
     height: 12px;
     width: 12px;
     bottom: 38px;
   }
-  
+
   .message-content {
     padding: 2px;
   }
-  
+
   .recipient {
     font-size: 10px;
     margin-bottom: 4px;
   }
-  
+
   .message {
     font-size: 7px;
-    line-height: 1.0;
+    line-height: 1;
   }
-  
+
   .sender {
     font-size: 8px;
     margin-top: 3px;
     margin-bottom: 2px;
   }
-  
+
   .gift-box {
     font-size: 14px;
     margin-top: 2px;
@@ -269,33 +273,34 @@ body {
     min-height: 300px;
     max-height: 350px;
   }
-  
+
   .outside p {
     font-size: 14px;
     letter-spacing: 1px;
     margin-top: 15px;
   }
-  
+
   .message {
     font-size: 6px;
     line-height: 0.95;
   }
-  
-  .recipient, .sender {
+
+  .recipient,
+  .sender {
     font-size: 8px;
   }
-  
+
   .gift-box {
     font-size: 12px;
   }
-  
+
   .top-layer,
   .middle-layer,
   .bottom-layer {
     height: 50px;
     width: 150px;
   }
-  
+
   .candle {
     height: 30px;
     bottom: 125px;
