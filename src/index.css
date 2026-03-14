@@ -7,22 +7,20 @@
 body {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   min-height: 100vh;
-  padding: 20px;
+  padding: 10px;
   overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .card {
-  width: 90vw;
-  max-width: 640px;
-  height: 60vh;
-  max-height: 400px;
+  width: 95vw;
+  max-width: 800px;
+  height: 75vh;
+  max-height: 500px;
   min-width: 320px;
-  min-height: 250px;
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  min-height: 280px;
+  position: relative;
   -webkit-perspective: 1200px;
   perspective: 1200px;
   transition: 1s;
@@ -42,7 +40,7 @@ body {
 }
 .inside {
   background: #ffffff;
-  padding: 10px;
+  padding: 15px;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -60,7 +58,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 2px;
+  padding: 5px;
   overflow: hidden;
 }
 
@@ -68,15 +66,15 @@ body {
   text-align: right;
   font-weight: bold;
   color: #333;
-  margin-bottom: 3px;
-  font-size: 11px;
+  margin-bottom: 5px;
+  font-size: 14px;
 }
 
 .message {
   flex-grow: 1;
-  line-height: 1.05;
+  line-height: 1.1;
   color: #333;
-  font-size: 9px;
+  font-size: 11px;
   text-align: left;
   overflow: hidden;
   max-height: calc(100% - 70px);
@@ -85,16 +83,16 @@ body {
 .message p {
   margin: 0;
   padding: 0;
-  line-height: 1.15;
+  line-height: 1.2;
 }
 
 .sender {
   text-align: right;
   font-weight: bold;
   color: #333;
-  margin-top: 3px;
-  margin-bottom: 1px;
-  font-size: 10px;
+  margin-top: 5px;
+  margin-bottom: 2px;
+  font-size: 12px;
 }
 
 .gift-box {
@@ -129,16 +127,16 @@ body {
 .cake {
   width: 100%;
   position: absolute;
-  bottom: 30px;
+  bottom: 40px;
 }
 .top-layer,
 .middle-layer,
 .bottom-layer {
-  height: 80px;
-  width: 240px;
+  height: 90px;
+  width: 280px;
   background-repeat: repeat;
-  background-size: 60px 100px;
-  background-position: 28px 0;
+  background-size: 70px 110px;
+  background-position: 35px 0;
   background-image:
     linear-gradient(
       transparent 50px,
@@ -146,7 +144,7 @@ body {
       #ff52a2 60px,
       transparent 60px
     ),
-    radial-gradient(circle at 30px 5px, #f31559 30px, #faf0d7 31px);
+    radial-gradient(circle at 35px 5px, #f31559 35px, #faf0d7 36px);
   border-radius: 10px 10px 0 0;
   position: relative;
   margin: auto;
@@ -160,8 +158,8 @@ body {
   top: 26px;
 }
 .candle {
-  height: 45px;
-  width: 15px;
+  height: 50px;
+  width: 16px;
   background: repeating-linear-gradient(
     45deg,
     #fd3018 0,
@@ -173,25 +171,25 @@ body {
   margin: auto;
   left: 0;
   right: 0;
-  bottom: 202px;
+  bottom: 230px;
 }
 .candle:before {
   content: "";
   position: absolute;
-  height: 16px;
-  width: 16px;
+  height: 18px;
+  width: 18px;
   background-color: #ffa500;
   border-radius: 0 50% 50% 50%;
-  bottom: 48px;
+  bottom: 53px;
   transform: rotate(45deg);
   left: -1px;
 }
 .outside p {
-  font-size: 20px;
+  font-size: 24px;
   text-transform: uppercase;
-  margin-top: 30px;
+  margin-top: 40px;
   text-align: center;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
   color: #000046;
   font-weight: bold;
 }
@@ -199,10 +197,10 @@ body {
 /* 모바일 반응형 스타일 */
 @media (max-width: 768px) {
   .card {
-    width: 90vw;
-    height: 50vh;
-    min-height: 280px;
-    max-height: 320px;
+    width: 95vw;
+    height: 65vh;
+    min-height: 320px;
+    max-height: 400px;
   }
   
   .outside p {
@@ -266,10 +264,10 @@ body {
 /* 아이폰 SE 등 작은 화면용 */
 @media (max-width: 375px) {
   .card {
-    width: 88vw;
-    height: 45vh;
-    min-height: 260px;
-    max-height: 300px;
+    width: 92vw;
+    height: 60vh;
+    min-height: 300px;
+    max-height: 350px;
   }
   
   .outside p {
